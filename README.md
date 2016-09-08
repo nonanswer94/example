@@ -1,5 +1,1 @@
-# example
-
-## int charge
-
-## hi
+# 베이즈 통계 1번째 실습
