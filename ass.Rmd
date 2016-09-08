@@ -1,0 +1,25 @@
+---
+title: "20160908bayesian"
+author: "Yuntae Kang"
+date: "2016³â 9¿ù 8ÀÏ"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+x<-datasets::"airquality"
+lm.ex<-lm(x$Ozone ~ x$Wind)
+summary(lm.ex)
+```
+
+## Including Plots
+
+```{r pressure, echo=FALSE}
+plot(x$Wind,x$Ozone)
+abline(coef=coef(lm.ex))
+```
